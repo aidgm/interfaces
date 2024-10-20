@@ -1,0 +1,23 @@
+/*Posicionamiento1*/
+/*La posición relative sigue la estructura original del HTML lo que lugar a la superposición de la
+caja 3 sobre la 4. Solo afecta a la posición visual del elemento, no a su ubicación dentro del 
+HTML.*/
+
+
+/*Posicionamiento2*/
+/*La posición absolute saca al elemento del flujo del HTML. Por lo que caja 3 se posiciona en la
+parte superior izquierda de la página
+
+Al asignarle la posición relativa al contenedor la caja 3 pasa a posicionarse en relación a los
+bordes del contenedor ya que este pasaría a ser la referencia de la caja superponiéndose a las cajas
+1 y 2 por el posicionamiento absoluto ya que se mueve de manera independiente de ellas. 
+
+
+Al mover el contenedor la caja 3 también se desplaza con él porque está en posición absoluta pero
+dependiendo del contenedor. */
+
+
+/*Posicionamiento3*/
+/*Con el posicionamiento fixed se consigue que el título se mantenga fijo en la parte superior de 
+la página y ocupando todo el ancho de la misma ya que tiene un width del 100%. El posicionamiento
+fixed por lo tanto también saca del flujo del HTML el título en este caso.*/

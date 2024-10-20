@@ -1,0 +1,11 @@
+#caja3{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#container{
+    position: relative;
+    left: 50px;
+
+}
