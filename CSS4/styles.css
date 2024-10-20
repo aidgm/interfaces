@@ -1,0 +1,255 @@
+/* Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("img/paven.png");
+}
+
+/*Cabecera*/
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+#logotipo img {
+    width: 140px;
+    margin: 0 auto;
+}
+
+/*Título principal*/
+h1 {
+    font-size: 40px;
+    color: #70b231;
+    text-shadow: 0px 2px 4px #333333;
+    margin-top: 10px;
+}
+
+/*Menú*/
+nav {
+    width: 100%;
+    background-color: #333333;
+    height: 40px;
+    box-shadow: 0px 0px 2px grey;
+    margin-bottom: 40px; 
+    
+}
+/*contenido de cada apartado*/
+nav ul {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li:hover {
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px grey inset;
+}
+
+/*Enlaces elementos listas*/
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    color: white;
+    line-height: 40px; 
+    text-decoration: none;
+}
+
+
+
+/*Contenido principal*/
+#content {
+    width: 100%;
+    max-width: 1250px;
+    min-height: 1100px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 20px;
+}
+
+/*Barra lateral*/
+#aside {
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#aside ul {
+    list-style-type: none; 
+    
+}
+.widget {
+    margin-bottom: 20px;
+    width: 180px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*Títulos de la barra lateral*/
+.widget h3 {
+    color: #333333;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #ccc;
+}
+
+/*Texto*/
+#aside label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/*Botones general*/
+#aside input[type="text"],
+#aside input[type="submit"],
+#aside input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+/*Botón para entrar*/
+#aside input[type="submit"]{
+    background-color: #70b231;
+}
+
+/*Botones pasar por encima*/
+#aside input[type="text"]:hover,
+#aside input[type="password"]:hover,
+#aside input[type="submit"]:hover {
+    box-shadow: 0px 0px 2px gray;
+}
+
+/*Enlaces barra lateral*/
+#aside a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #70b231;
+    text-decoration: none;
+}
+
+#aside a:hover {
+    color: #529125;
+}
+
+/*Secciones*/
+#sections{
+    float: left;
+    width: 75%;
+}
+
+/*Bloque cada sección*/
+#sections section {
+    position: relative;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    border: 1px solid #ccc;
+    text-align: justify;
+}
+
+/*Título cada sección*/
+#sections h2.titulo {
+    color: #333333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/*Separar párrafos*/
+#sections article p {
+    margin-bottom: 20px;
+}
+
+/*Enlace (título de la entrada)*/
+#sections article a {
+    color: #529125;
+    text-decoration: none;
+}
+
+#sections article a:hover {
+    color: #285616;
+}
+
+/*Pegatinas de las secciones*/
+.stickerOne{
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+.stickerTwo{
+    position: absolute;
+    top: -20px;
+    right: 10px;
+}
+
+/*Pie de página*/
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0px 0px 2px grey;
+    margin-top: 20px;
+    
+}
+
+footer a {
+    color: #70b231;
+    text-decoration: none;
+}
+
+
+
+/*Para pantalla pequeña, el menú se reduce
+y se esconde lo que no entra*/
+
+@media (max-width: 800px) {
+    nav {
+        background-color: #333;             
+        overflow: hidden;         
+    }
+
+    nav ul {             
+        padding: 0;               
+        margin: 0;                
+    }
+
+    nav ul li {
+        float: left;              
+        width: 50%;               
+    }
+
+    nav ul li a {
+        padding: 10px;            
+        font-size: 10px;          
+        text-align: center;       
+    }
+}
+
+
+
+
+
+
