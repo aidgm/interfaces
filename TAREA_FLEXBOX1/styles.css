@@ -1,0 +1,161 @@
+/*Estilos globales*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+#container{
+    width: 90%;
+    margin: 2vw auto;
+    box-shadow: 0 4px 8px #333;
+}
+
+/*Cabecera*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 4px 8px #333;
+    padding: 1rem 0;
+}
+
+.logo{
+    width: 50%;
+    flex-grow: 1;
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 2.5vw;
+}
+
+/*Menú de navegación*/
+
+nav #menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#menu ul li{
+    margin: 0 50px;
+}
+
+#menu ul li a{
+    font-size: 1.5vw;
+    transition: color 300ms;
+    color:gray;
+    padding: 3px 8px;
+}
+
+#menu ul li a:hover{
+    color: coral;
+    background-color: black;
+    padding: 5px;
+}
+
+/*Contenido*/
+#content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/*Barra lateral*/
+aside h2{
+    color: #333;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 10px;
+}
+
+aside{
+    width: 20%;
+    padding: 20px;
+}
+
+aside ul li{
+    background-color: lightgray;
+    border: 1px solid gray;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+aside ul li a{
+    color: black;
+    transition: color 300ms;
+}
+
+aside ul li a:hover{
+    color: darkgray; 
+}
+
+/*Proyectos*/
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#projects .project{
+    width: 20%;
+    margin: 0 10px 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px #333;
+
+}
+
+#projects .image-wrap img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 10px;
+}
+.project-info a{
+    color: black;
+}
+.project-info a:hover{
+    color: coral;
+}
+.project-info p{
+    color: thistle;
+}
+
+/*Pie de página*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    color: #555;
+    
+}
+
+footer .logo{
+    opacity: 50%;
+    text-align: right;
+    font-size: 20px;
+    color: #222;
+}
+
+footer .info{
+    text-align: left;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #555;
+}
